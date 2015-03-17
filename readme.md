@@ -8,7 +8,6 @@ An attempt to figure out the bluetooth protocol for FireChat.
 git clone https://github.com/davidchiles/FireSnoop.git
 cd ./FireSnoop
 pod install
-
 ```
 
 ## The Protocol (in progress)
@@ -27,10 +26,10 @@ There's a counter ... and that's about it.
 ```
 1st Packet: 8102...(payload)
 2nd Packet: 02...(payload)
-3rd Packet : 03...(payload)
-4th Packet : 8400...(payload)
+3rd Packet: 03...(payload)
+4th Packet: 8400...(payload)
 ```
-So in this case the first packet's counter is 81, in Hex, which is 129 in decimal and `129%128` is 1. That looks to be how the counter works. The counter goes from 0 to 128 (may be off by one) then for starting packets 128 is added to it.
+So in this case the first packet's counter is 81, in Hex, which is 129 in decimal and `129%128 = 1`. That looks to be how the counter works. The counter goes from 0 to 128 (may be off by one) then for starting packets 128 is added to it.
 
 But the counter increments on every message sent.
 
@@ -47,13 +46,12 @@ This is the dictionary that makes up a firechat message that is then packetized.
 {
 	"name": "User's full name",
 	"user": "Some username",
-	"t": the time the message is created?
+	"t": the time the message is created?,
 	likes: [ ],
 	"h": true/false,
 	"uuid": "some unique identifier",
 	msg: "The actual messae",
-	"firechat": "Nearby"
+	"firechat": "Nearby",
 	"st": the time the message is sent?
 }
-
 ```
