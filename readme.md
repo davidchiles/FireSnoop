@@ -2,6 +2,8 @@
 
 An attempt to figure out the bluetooth protocol for FireChat.
 
+Requires a second device that supports BLE peripheral mode (another iOS device works). This app acts as a central for now.
+
 ## How-to Install
 
 ```
