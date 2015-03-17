@@ -2,7 +2,7 @@
 
 An attempt to figure out the bluetooth protocol for FireChat.
 
-Requires a second device that supports BLE peripheral mode (another iOS device works). This app acts as a central for now.
+Requires a second device that supports BLE peripheral mode (another iOS device works) with FireChat installed. This app acts as a central for now.
 
 ## How-to Install
 
@@ -19,8 +19,8 @@ There's a counter ... and that's about it.
 ### Counters
 
 - First byte is always a counter 
-	- if the first byte >128 then it's a start of message and then the second byte is number of following packets.
-	- if second byte <128 then it's a following packet to complete a message.
+	- If the first byte >128 then it's a start of message and then the second byte is number of following packets.
+	- If second byte <128 then it's a following packet to complete a message.
 	- All bytes after counter and number of packets is the payload (json in this case)	.
 	
 #### Example (Hex)
@@ -31,7 +31,7 @@ There's a counter ... and that's about it.
 3rd Packet: 03...(payload)
 4th Packet: 8400...(payload)
 ```
-So in this case the first packet's counter is 81, in Hex, which is 129 in decimal and `129%128 = 1`. That looks to be how the counter works. The counter goes from 0 to 128 (may be off by one) then for starting packets 128 is added to it.
+So in this case the first packet's counter is 81, in Hex, which is 129 in decimal and `129%128 = 1`. That looks to be how the counter works. The counter goes from 0 to 128 (may be off by one) then 128 is added to the counter for starting packets.
 
 But the counter increments on every message sent.
 
