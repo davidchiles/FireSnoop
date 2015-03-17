@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63177B711AB798C300C9E623 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63177B701AB798C300C9E623 /* main.m */; };
+		63177B741AB798C300C9E623 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63177B731AB798C300C9E623 /* AppDelegate.m */; };
+		63177B771AB798C300C9E623 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63177B761AB798C300C9E623 /* ViewController.m */; };
+		63177B7A1AB798C300C9E623 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63177B781AB798C300C9E623 /* Main.storyboard */; };
+		63177B7C1AB798C300C9E623 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63177B7B1AB798C300C9E623 /* Images.xcassets */; };
+		63177B7F1AB798C300C9E623 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63177B7D1AB798C300C9E623 /* LaunchScreen.xib */; };
+		63177B8B1AB798C300C9E623 /* FireSnoopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63177B8A1AB798C300C9E623 /* FireSnoopTests.m */; };
+		6341D0971AB79A5B00C904E2 /* FSPData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6341D0961AB79A5B00C904E2 /* FSPData.m */; };
+		6341D09B1AB79ACF00C904E2 /* FSPBluetoothCentrel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6341D09A1AB79ACF00C904E2 /* FSPBluetoothCentrel.m */; };
+		6341D09E1AB79AFA00C904E2 /* FSPDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6341D09D1AB79AFA00C904E2 /* FSPDatabaseManager.m */; };
+		98D5A044F7A230E7F1151851 /* libPods-FireSnoop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 109B567E231A1B7243B779E7 /* libPods-FireSnoop.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63177B851AB798C300C9E623 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63177B631AB798C300C9E623 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63177B6A1AB798C300C9E623;
+			remoteInfo = FireSnoop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A30150041B6DAFD2805E53C /* Pods-FireSnoop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireSnoop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireSnoop/Pods-FireSnoop.debug.xcconfig"; sourceTree = "<group>"; };
+		109B567E231A1B7243B779E7 /* libPods-FireSnoop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FireSnoop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63177B6B1AB798C300C9E623 /* FireSnoop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireSnoop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63177B6F1AB798C300C9E623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63177B701AB798C300C9E623 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		63177B721AB798C300C9E623 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		63177B731AB798C300C9E623 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		63177B751AB798C300C9E623 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		63177B761AB798C300C9E623 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		63177B791AB798C300C9E623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63177B7B1AB798C300C9E623 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		63177B7E1AB798C300C9E623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		63177B841AB798C300C9E623 /* FireSnoopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireSnoopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63177B891AB798C300C9E623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63177B8A1AB798C300C9E623 /* FireSnoopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FireSnoopTests.m; sourceTree = "<group>"; };
+		6341D0951AB79A5B00C904E2 /* FSPData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSPData.h; path = Model/FSPData.h; sourceTree = "<group>"; };
+		6341D0961AB79A5B00C904E2 /* FSPData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSPData.m; path = Model/FSPData.m; sourceTree = "<group>"; };
+		6341D0991AB79ACF00C904E2 /* FSPBluetoothCentrel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPBluetoothCentrel.h; sourceTree = "<group>"; };
+		6341D09A1AB79ACF00C904E2 /* FSPBluetoothCentrel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPBluetoothCentrel.m; sourceTree = "<group>"; };
+		6341D09C1AB79AFA00C904E2 /* FSPDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPDatabaseManager.h; sourceTree = "<group>"; };
+		6341D09D1AB79AFA00C904E2 /* FSPDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPDatabaseManager.m; sourceTree = "<group>"; };
+		E5AC9E8192BE888B25392BAB /* Pods-FireSnoop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireSnoop.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireSnoop/Pods-FireSnoop.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63177B681AB798C300C9E623 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98D5A044F7A230E7F1151851 /* libPods-FireSnoop.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63177B811AB798C300C9E623 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63177B621AB798C300C9E623 = {
+			isa = PBXGroup;
+			children = (
+				63177B6D1AB798C300C9E623 /* FireSnoop */,
+				63177B871AB798C300C9E623 /* FireSnoopTests */,
+				63177B6C1AB798C300C9E623 /* Products */,
+				A5EF49F6DA5DA6562A86749F /* Pods */,
+				B2485A782AEF68FDD7417361 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		63177B6C1AB798C300C9E623 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63177B6B1AB798C300C9E623 /* FireSnoop.app */,
+				63177B841AB798C300C9E623 /* FireSnoopTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63177B6D1AB798C300C9E623 /* FireSnoop */ = {
+			isa = PBXGroup;
+			children = (
+				63177B721AB798C300C9E623 /* AppDelegate.h */,
+				63177B731AB798C300C9E623 /* AppDelegate.m */,
+				63177B751AB798C300C9E623 /* ViewController.h */,
+				63177B761AB798C300C9E623 /* ViewController.m */,
+				6341D0991AB79ACF00C904E2 /* FSPBluetoothCentrel.h */,
+				6341D09A1AB79ACF00C904E2 /* FSPBluetoothCentrel.m */,
+				6341D09C1AB79AFA00C904E2 /* FSPDatabaseManager.h */,
+				6341D09D1AB79AFA00C904E2 /* FSPDatabaseManager.m */,
+				6341D0981AB79A6400C904E2 /* Model */,
+				63177B781AB798C300C9E623 /* Main.storyboard */,
+				63177B7B1AB798C300C9E623 /* Images.xcassets */,
+				63177B7D1AB798C300C9E623 /* LaunchScreen.xib */,
+				63177B6E1AB798C300C9E623 /* Supporting Files */,
+			);
+			path = FireSnoop;
+			sourceTree = "<group>";
+		};
+		63177B6E1AB798C300C9E623 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63177B6F1AB798C300C9E623 /* Info.plist */,
+				63177B701AB798C300C9E623 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63177B871AB798C300C9E623 /* FireSnoopTests */ = {
+			isa = PBXGroup;
+			children = (
+				63177B8A1AB798C300C9E623 /* FireSnoopTests.m */,
+				63177B881AB798C300C9E623 /* Supporting Files */,
+			);
+			path = FireSnoopTests;
+			sourceTree = "<group>";
+		};
+		63177B881AB798C300C9E623 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63177B891AB798C300C9E623 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6341D0981AB79A6400C904E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6341D0951AB79A5B00C904E2 /* FSPData.h */,
+				6341D0961AB79A5B00C904E2 /* FSPData.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A5EF49F6DA5DA6562A86749F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A30150041B6DAFD2805E53C /* Pods-FireSnoop.debug.xcconfig */,
+				E5AC9E8192BE888B25392BAB /* Pods-FireSnoop.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B2485A782AEF68FDD7417361 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				109B567E231A1B7243B779E7 /* libPods-FireSnoop.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63177B6A1AB798C300C9E623 /* FireSnoop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63177B8E1AB798C300C9E623 /* Build configuration list for PBXNativeTarget "FireSnoop" */;
+			buildPhases = (
+				40EA7955E5CDAECEF12B9A86 /* Check Pods Manifest.lock */,
+				63177B671AB798C300C9E623 /* Sources */,
+				63177B681AB798C300C9E623 /* Frameworks */,
+				63177B691AB798C300C9E623 /* Resources */,
+				93D909E7317294B111CF5F4F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FireSnoop;
+			productName = FireSnoop;
+			productReference = 63177B6B1AB798C300C9E623 /* FireSnoop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63177B831AB798C300C9E623 /* FireSnoopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63177B911AB798C300C9E623 /* Build configuration list for PBXNativeTarget "FireSnoopTests" */;
+			buildPhases = (
+				63177B801AB798C300C9E623 /* Sources */,
+				63177B811AB798C300C9E623 /* Frameworks */,
+				63177B821AB798C300C9E623 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63177B861AB798C300C9E623 /* PBXTargetDependency */,
+			);
+			name = FireSnoopTests;
+			productName = FireSnoopTests;
+			productReference = 63177B841AB798C300C9E623 /* FireSnoopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63177B631AB798C300C9E623 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "David Chiles";
+				TargetAttributes = {
+					63177B6A1AB798C300C9E623 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					63177B831AB798C300C9E623 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 63177B6A1AB798C300C9E623;
+					};
+				};
+			};
+			buildConfigurationList = 63177B661AB798C300C9E623 /* Build configuration list for PBXProject "FireSnoop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63177B621AB798C300C9E623;
+			productRefGroup = 63177B6C1AB798C300C9E623 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63177B6A1AB798C300C9E623 /* FireSnoop */,
+				63177B831AB798C300C9E623 /* FireSnoopTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63177B691AB798C300C9E623 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63177B7A1AB798C300C9E623 /* Main.storyboard in Resources */,
+				63177B7F1AB798C300C9E623 /* LaunchScreen.xib in Resources */,
+				63177B7C1AB798C300C9E623 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63177B821AB798C300C9E623 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40EA7955E5CDAECEF12B9A86 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		93D909E7317294B111CF5F4F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireSnoop/Pods-FireSnoop-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63177B671AB798C300C9E623 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6341D09E1AB79AFA00C904E2 /* FSPDatabaseManager.m in Sources */,
+				63177B771AB798C300C9E623 /* ViewController.m in Sources */,
+				63177B741AB798C300C9E623 /* AppDelegate.m in Sources */,
+				63177B711AB798C300C9E623 /* main.m in Sources */,
+				6341D0971AB79A5B00C904E2 /* FSPData.m in Sources */,
+				6341D09B1AB79ACF00C904E2 /* FSPBluetoothCentrel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63177B801AB798C300C9E623 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63177B8B1AB798C300C9E623 /* FireSnoopTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63177B861AB798C300C9E623 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63177B6A1AB798C300C9E623 /* FireSnoop */;
+			targetProxy = 63177B851AB798C300C9E623 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63177B781AB798C300C9E623 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63177B791AB798C300C9E623 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63177B7D1AB798C300C9E623 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63177B7E1AB798C300C9E623 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63177B8C1AB798C300C9E623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63177B8D1AB798C300C9E623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63177B8F1AB798C300C9E623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A30150041B6DAFD2805E53C /* Pods-FireSnoop.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FireSnoop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		63177B901AB798C300C9E623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5AC9E8192BE888B25392BAB /* Pods-FireSnoop.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FireSnoop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		63177B921AB798C300C9E623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FireSnoopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FireSnoop.app/FireSnoop";
+			};
+			name = Debug;
+		};
+		63177B931AB798C300C9E623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FireSnoopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FireSnoop.app/FireSnoop";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63177B661AB798C300C9E623 /* Build configuration list for PBXProject "FireSnoop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63177B8C1AB798C300C9E623 /* Debug */,
+				63177B8D1AB798C300C9E623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63177B8E1AB798C300C9E623 /* Build configuration list for PBXNativeTarget "FireSnoop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63177B8F1AB798C300C9E623 /* Debug */,
+				63177B901AB798C300C9E623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63177B911AB798C300C9E623 /* Build configuration list for PBXNativeTarget "FireSnoopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63177B921AB798C300C9E623 /* Debug */,
+				63177B931AB798C300C9E623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63177B631AB798C300C9E623 /* Project object */;
+}
