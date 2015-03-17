@@ -17,6 +17,8 @@
 		6341D0971AB79A5B00C904E2 /* FSPData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6341D0961AB79A5B00C904E2 /* FSPData.m */; };
 		6341D09B1AB79ACF00C904E2 /* FSPBluetoothCentrel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6341D09A1AB79ACF00C904E2 /* FSPBluetoothCentrel.m */; };
 		6341D09E1AB79AFA00C904E2 /* FSPDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6341D09D1AB79AFA00C904E2 /* FSPDatabaseManager.m */; };
+		6341D0A11AB8B5F300C904E2 /* FSPDateEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6341D0A01AB8B5F300C904E2 /* FSPDateEntryViewController.m */; };
+		6341D0A41AB8CA0F00C904E2 /* NSData+FireSnoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 6341D0A31AB8CA0F00C904E2 /* NSData+FireSnoop.m */; };
 		98D5A044F7A230E7F1151851 /* libPods-FireSnoop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 109B567E231A1B7243B779E7 /* libPods-FireSnoop.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,10 @@
 		6341D09A1AB79ACF00C904E2 /* FSPBluetoothCentrel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPBluetoothCentrel.m; sourceTree = "<group>"; };
 		6341D09C1AB79AFA00C904E2 /* FSPDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPDatabaseManager.h; sourceTree = "<group>"; };
 		6341D09D1AB79AFA00C904E2 /* FSPDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPDatabaseManager.m; sourceTree = "<group>"; };
+		6341D09F1AB8B5F300C904E2 /* FSPDateEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPDateEntryViewController.h; sourceTree = "<group>"; };
+		6341D0A01AB8B5F300C904E2 /* FSPDateEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPDateEntryViewController.m; sourceTree = "<group>"; };
+		6341D0A21AB8CA0F00C904E2 /* NSData+FireSnoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+FireSnoop.h"; sourceTree = "<group>"; };
+		6341D0A31AB8CA0F00C904E2 /* NSData+FireSnoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+FireSnoop.m"; sourceTree = "<group>"; };
 		E5AC9E8192BE888B25392BAB /* Pods-FireSnoop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireSnoop.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireSnoop/Pods-FireSnoop.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,10 +107,14 @@
 				63177B731AB798C300C9E623 /* AppDelegate.m */,
 				63177B751AB798C300C9E623 /* ViewController.h */,
 				63177B761AB798C300C9E623 /* ViewController.m */,
+				6341D09F1AB8B5F300C904E2 /* FSPDateEntryViewController.h */,
+				6341D0A01AB8B5F300C904E2 /* FSPDateEntryViewController.m */,
 				6341D0991AB79ACF00C904E2 /* FSPBluetoothCentrel.h */,
 				6341D09A1AB79ACF00C904E2 /* FSPBluetoothCentrel.m */,
 				6341D09C1AB79AFA00C904E2 /* FSPDatabaseManager.h */,
 				6341D09D1AB79AFA00C904E2 /* FSPDatabaseManager.m */,
+				6341D0A21AB8CA0F00C904E2 /* NSData+FireSnoop.h */,
+				6341D0A31AB8CA0F00C904E2 /* NSData+FireSnoop.m */,
 				6341D0981AB79A6400C904E2 /* Model */,
 				63177B781AB798C300C9E623 /* Main.storyboard */,
 				63177B7B1AB798C300C9E623 /* Images.xcassets */,
@@ -301,12 +311,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6341D0A41AB8CA0F00C904E2 /* NSData+FireSnoop.m in Sources */,
 				6341D09E1AB79AFA00C904E2 /* FSPDatabaseManager.m in Sources */,
 				63177B771AB798C300C9E623 /* ViewController.m in Sources */,
 				63177B741AB798C300C9E623 /* AppDelegate.m in Sources */,
 				63177B711AB798C300C9E623 /* main.m in Sources */,
 				6341D0971AB79A5B00C904E2 /* FSPData.m in Sources */,
 				6341D09B1AB79ACF00C904E2 /* FSPBluetoothCentrel.m in Sources */,
+				6341D0A11AB8B5F300C904E2 /* FSPDateEntryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

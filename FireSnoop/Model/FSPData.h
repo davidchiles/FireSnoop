@@ -17,6 +17,8 @@
 
 @property (nonatomic, strong) NSData *data;
 
+- (NSString *)utf8String;
+
 - (NSString *)yapCollection;
 
 + (NSString *)yapCollection;

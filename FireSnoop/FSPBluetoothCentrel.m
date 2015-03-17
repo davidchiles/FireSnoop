@@ -77,6 +77,11 @@ NSString *const kFSPUUID = @"4621192D-315F-478A-943F-B2CA635213DF";
     [peripheral discoverServices:@[self.uuid]];
 }
 
+- (void)centralManager:(CBCentralManager *)central didDisconnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error
+{
+    NSLog(@"Disconnect Peripheral");
+}
+
 
 #pragma - mark CBPeripheralDelegate Methods
 

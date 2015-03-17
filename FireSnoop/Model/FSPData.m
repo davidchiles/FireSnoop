@@ -7,6 +7,7 @@
 //
 
 #import "FSPData.h"
+#import "NSData+FireSnoop.h"
 
 @implementation FSPData
 
@@ -17,6 +18,20 @@
         _date = [NSDate date];
     }
     return self;
+}
+
+- (NSString *)utf8String
+{
+    NSUInteger start = 1;
+    uint8_t firstByte = 0;
+    if (self.data.length) {
+        firstByte = [self.data fsp_byteAtIndex:0];
+    }
+    
+    if (self.data.length > 1 && firstByte > 128) {
+        start = 2;
+    }
+    return [[NSString alloc] initWithData:[self.data fsp_dataRemovingLeadingBytes:start] encoding:NSUTF8StringEncoding];
 }
 
 - (NSString *)yapCollection

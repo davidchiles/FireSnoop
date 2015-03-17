@@ -14,6 +14,9 @@
 #import "YapDatabaseViewConnection.h"
 #import "YapDatabaseViewTransaction.h"
 #import "FSPData.h"
+#import "NSData+FireSnoop.h"
+
+#import "FSPDateEntryViewController.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -34,7 +37,7 @@
     if (self = [self init]) {
         self.databaseConnection = connection;
         self.dateFormatter = [[NSDateFormatter alloc] init];
-        [self.dateFormatter setDateStyle:NSDateFormatterShortStyle];
+        [self.dateFormatter setDateFormat:@"HH:mm:ss"];
     }
     return self;
 }
@@ -94,13 +97,18 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];
     }
     
     FSPData *dataEntry = [self dataEntryForIndexPath:indexPath];
     cell.textLabel.text = dataEntry.identifier;
     NSString *dateString = [self.dateFormatter stringFromDate:dataEntry.date];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - %lu bytes",dateString,(unsigned long)dataEntry.data.length];
+    uint8_t firstByte = [dataEntry.data fsp_byteAtIndex:0];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - %lu bytes - counter %d",dateString,(unsigned long)dataEntry.data.length,firstByte];
+    if (firstByte > 128) {
+        uint8_t secondByte = [dataEntry.data fsp_byteAtIndex:1];
+        cell.detailTextLabel.text = [cell.detailTextLabel.text stringByAppendingString:[NSString stringWithFormat:@" - packets %d",secondByte ]];
+    }
     
     return cell;
 }
@@ -111,7 +119,12 @@
 {
     FSPData *dataEntry = [self dataEntryForIndexPath:indexPath];
     
-    NSLog(@"String: %@",[[NSString alloc] initWithData:dataEntry.data encoding:NSASCIIStringEncoding]);
+    NSLog(@"String: %@",[dataEntry utf8String]);
+    NSLog(@"HEX: %@",dataEntry.data);
+   
+    
+    FSPDateEntryViewController *viewController = [[FSPDateEntryViewController alloc] initWithDataEntry:dataEntry];
+    [self.navigationController pushViewController:viewController animated:YES];
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
